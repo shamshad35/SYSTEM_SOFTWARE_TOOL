@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>System Software Toolkit</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><div class="logo">SS</div><div><strong>System Software</strong><span>Toolkit</span></div></div>
+    <button class="nav active" data-mode="home">⌂ <span>Dashboard</span></button>
+    <div class="nav-label">MODULES</div>
+    <button class="nav" data-mode="lexical">01 <span>Lexical Analyzer</span></button>
+    <button class="nav" data-mode="symbol">02 <span>Symbol Table</span></button>
+    <button class="nav" data-mode="assembler">03 <span>Two-Pass Assembler</span></button>
+    <button class="nav" data-mode="macro">04 <span>Macro Processor</span></button>
+    <button class="nav" data-mode="linker">05 <span>Linker & Loader</span></button>
+    <button class="nav" data-mode="parser">06 <span>Recursive Parser</span></button>
+    <button class="nav" data-mode="quadruple">07 <span>Quadruple Generator</span></button>
+    <button class="nav" data-mode="optimizer">08 <span>Code Optimizer</span></button>
+    <div class="sidebar-foot">C ENGINE<br><b>8 components</b></div>
+  </aside>
+  <main class="main">
+    <header><div><div class="eyebrow">SYSTEM SOFTWARE LAB</div><h1 id="pageTitle">Interactive Toolkit</h1></div><div class="status"><i></i> C Engine Ready</div></header>
+    <section id="home" class="view">
+      <div class="hero"><div><div class="eyebrow">WEB-BASED C TOOLKIT</div><h2>Explore the building blocks of system software.</h2><p>Run the original C implementations through a clean browser interface. Select a module, enter your input and inspect the generated output.</p></div><div class="hero-mark">8<br><span>MODULES</span></div></div>
+      <div class="cards" id="moduleCards"></div>
+    </section>
+    <section id="module" class="view hidden">
+      <div class="module-head"><div><div class="eyebrow" id="moduleNo">MODULE</div><h2 id="moduleTitle"></h2><p id="moduleDesc"></p></div><button id="exampleBtn" class="ghost">Load Example</button></div>
+      <div class="workspace"><div class="panel input-panel"><div class="panel-top"><span>INPUT</span><span class="hint">Ctrl + Enter to run</span></div><textarea id="input" spellcheck="false"></textarea><div class="actions"><button id="runBtn" class="run">▶ Run Module</button><button id="clearBtn" class="ghost">Clear</button></div></div><div class="panel output-panel"><div class="panel-top"><span>OUTPUT</span><span id="runtime" class="hint"></span></div><div id="output" class="output"><div class="empty">Run the module to see results here.</div></div></div></div>
+      <div class="info-strip"><b>Pipeline</b><span>Browser UI</span><em>→</em><span>Node.js API</span><em>→</em><span>Original C engine</span><em>→</em><span>Rendered result</span></div>
+    </section>
+  </main>
+</div>
+<script src="app.js"></script>
+</body></html>
