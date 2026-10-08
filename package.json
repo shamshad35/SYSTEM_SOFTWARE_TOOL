@@ -1,0 +1,12 @@
+{
+  "name": "system-software-toolkit",
+  "version": "1.0.0",
+  "description": "Web-based System Software Toolkit implemented in C",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
